@@ -28,7 +28,7 @@ void Environment::draw()
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
         int height,width;
-        char walls[] = "./images/cracked_concrete_256.ppm";
+        char walls[] = "/Users/mshirlaw/Ubuntu One/comp323/assignments/project/part2/Draft/Debris3D/Debris3D/images/cracked_concrete_256.ppm";
         bool success = PPMReader(walls,height,width,tex1);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, height, width, 0, GL_RGB, GL_UNSIGNED_BYTE, tex1);
         delete tex1;
@@ -38,7 +38,7 @@ void Environment::draw()
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        char floor[] = "./images/pebbles_concrete_256.ppm";
+        char floor[] = "/Users/mshirlaw/Ubuntu One/comp323/assignments/project/part2/Draft/Debris3D/Debris3D/images/pebbles_concrete_256.ppm";
         success = PPMReader(floor,height,width,tex1);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, height, width, 0, GL_RGB, GL_UNSIGNED_BYTE, tex1);
         delete tex1;
@@ -48,7 +48,7 @@ void Environment::draw()
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        char roof[] = "./images/stars_256.ppm";
+        char roof[] = "/Users/mshirlaw/Ubuntu One/comp323/assignments/project/part2/Draft/Debris3D/Debris3D/images/stars_256.ppm";
         success = PPMReader(roof,height,width,tex1);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, height, width, 0, GL_RGB, GL_UNSIGNED_BYTE, tex1);
         delete tex1;
@@ -59,7 +59,7 @@ void Environment::draw()
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-        char endWall[] = "./images/stars2_256.ppm";
+        char endWall[] = "/Users/mshirlaw/Ubuntu One/comp323/assignments/project/part2/Draft/Debris3D/Debris3D/images/stars2_256.ppm";
         success = PPMReader(endWall,height,width,tex1);
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, height, width, 0, GL_RGB, GL_UNSIGNED_BYTE, tex1);
         delete tex1;
